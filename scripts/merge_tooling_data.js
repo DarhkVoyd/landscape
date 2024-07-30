@@ -1,5 +1,6 @@
 const yaml = require("js-yaml");
 const fs = require("fs");
+const url = require("url");
 
 const landscapeFilePath = "landscape.yml";
 const toolingFilePath = "external_data/tooling-data.yaml";
@@ -12,7 +13,7 @@ const toolsCategory = landscapeData.categories
   .subcategories.filter((subcategory) => subcategory.name === "Tools")[0];
 
 if (toolsCategory) {
-  toolsCategory.items = [];
+  let tools = [];
 
   for (let tool of toolingData) {
     const name = tool.name;
@@ -20,14 +21,46 @@ if (toolsCategory) {
     const description = tool.description;
 
     if (name && homepage_url && description) {
-      toolsCategory.items.push({
+      tools.push({
         name,
         homepage_url,
-        logo: "",
         description,
       });
     }
   }
+
+  let nameCount = {};
+  tools.forEach((tool) => {
+    if (!nameCount[tool.name]) {
+      nameCount[tool.name] = 0;
+    }
+    nameCount[tool.name]++;
+  });
+
+  tools.forEach((tool) => {
+    if (nameCount[tool.name] > 1) {
+      const parsedUrl = url.parse(tool.homepage_url);
+      let domainOrUsername;
+
+      if (parsedUrl.host.includes("github.com")) {
+        const pathParts = parsedUrl.path.split("/");
+        domainOrUsername = pathParts[1]; // GitHub username
+      } else {
+        const hostParts = parsedUrl.host.split(".");
+        domainOrUsername =
+          hostParts.length > 2 ? hostParts[hostParts.length - 2] : hostParts[0];
+      }
+
+      tool.name = `@${domainOrUsername}/${tool.name}`;
+    }
+  });
+
+  toolsCategory.items = tools.map((tool) => ({
+    name: tool.name,
+    homepage_url: tool.homepage_url,
+    logo: "",
+    description: tool.description,
+  }));
 
   saveYaml(landscapeData, landscapeFilePath);
 } else {
@@ -46,25 +79,15 @@ function loadYaml(filePath) {
 
 function saveYaml(data, filePath) {
   try {
-    const yamlStr = yaml.dump(data, {
+    let yamlStr = yaml.dump(data, {
       sortKeys: false,
       noRefs: true,
       indent: 2,
       lineWidth: -1, // Ensures that long lines are not broken
     });
+
     fs.writeFileSync(filePath, yamlStr, "utf8");
   } catch (e) {
     console.error(`Failed to save YAML file: ${filePath}`, e);
   }
-}
-
-function makeNameUnique(existingNames, name) {
-  let originalName = name;
-  let suffix = 1;
-  while (existingNames.has(name)) {
-    name = `${originalName} (${suffix})`;
-    suffix += 1;
-  }
-  existingNames.add(name);
-  return name;
 }
