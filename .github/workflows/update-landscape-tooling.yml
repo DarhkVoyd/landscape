@@ -1,0 +1,44 @@
+name: Update Landscape Toolings
+
+on:
+  workflow_dispatch:
+
+jobs:
+  update-landscape:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up node environment
+        uses: actions/setup-node@v4
+
+      - name: Install node dependencies
+        run: |
+          npm install js-yaml
+
+      - name: Fetch tooling-data.yaml from json-schema-org/website
+        run: |
+          mkdir -p external_data
+          curl -o external_data/tooling-data.yaml https://raw.githubusercontent.com/darhkvoyd/website/test-landscape/data/tooling-data.yaml
+
+      - name: Merge tooling-data.yaml into landscape.yml
+        run: node scripts/update_tooling_data.js
+
+      - name: Check for changes
+        id: check_changes
+        run: |
+          git diff --exit-code || echo "Changes detected"
+
+      - name: Commit changes
+        if: steps.check_changes.outputs.exit_code == '1'
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const { execSync } = require('child_process');
+            execSync('git config --global user.name "github-actions[bot]"');
+            execSync('git config --global user.email "github-actions[bot]@users.noreply.github.com"');
+            execSync('git add landscape.yml logos/*.svg');
+            execSync('git commit -m "Update landscape.yml and add generated logos"');
+            execSync('git push');
