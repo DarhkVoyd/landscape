@@ -1,4 +1,5 @@
 const yaml = require("js-yaml");
+const path = require("path");
 const fs = require("fs");
 const url = require("url");
 
@@ -55,12 +56,20 @@ if (toolsCategory) {
     }
   });
 
-  toolsCategory.items = tools.map((tool) => ({
-    name: tool.name,
-    homepage_url: tool.homepage_url,
-    logo: "",
-    description: tool.description,
-  }));
+  toolsCategory.items = tools.map((tool) => {
+    const logoFileName = `${tool.name.replace(/ /g, "-").replace(/\//g, "-")}.svg`;
+    const logoFilePath = path.join("logos", logoFileName);
+    if (!fs.existsSync(logoFilePath)) {
+      generateSvg(tool.name, logoFilePath);
+    }
+
+    return {
+      name: tool.name,
+      homepage_url: tool.homepage_url,
+      logo: logoFileName,
+      description: tool.description,
+    };
+  });
 
   saveYaml(landscapeData, landscapeFilePath);
 } else {
@@ -90,4 +99,21 @@ function saveYaml(data, filePath) {
   } catch (e) {
     console.error(`Failed to save YAML file: ${filePath}`, e);
   }
+}
+
+function generateSvg(name, filePath) {
+  const size = 550; // Adjusted width and height to make it a square
+  const maxNameLength = 10;
+
+  if (name.length > maxNameLength) {
+    name = name.slice(0, maxNameLength) + "...";
+  }
+
+  const svgContent = `
+  <svg width="${size}" height="${size}" xmlns="http://www.w3.org/2000/svg">
+    <rect width="100%" height="100%" fill="#fff" />
+    <text y="50%" font-size="64" text-anchor="middle" fill="#000" dy=".3em">${name}</text>
+  </svg>`;
+
+  fs.writeFileSync(filePath, svgContent, "utf8");
 }
