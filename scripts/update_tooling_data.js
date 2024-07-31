@@ -9,23 +9,29 @@ const toolingFilePath = "external_data/tooling-data.yaml";
 const landscapeData = loadYaml(landscapeFilePath);
 const toolingData = loadYaml(toolingFilePath);
 
-const toolsCategory = landscapeData.categories
-  .filter((category) => category.name === "Tools")[0]
-  .subcategories.filter((subcategory) => subcategory.name === "Tools")[0];
+let toolsCategory = landscapeData.categories.filter(
+  (category) => category.name === "Tools",
+)[0];
 
 if (toolsCategory) {
+  toolsCategory.subcategories = [];
+
   let tools = [];
 
   for (let tool of toolingData) {
     const name = tool.name;
     const homepage_url = tool.source || tool.homepage;
     const description = tool.description;
+    const toolingTypes = tool.toolingTypes;
 
-    if (name && homepage_url && description) {
-      tools.push({
-        name,
-        homepage_url,
-        description,
+    if (name && homepage_url && description && Array.isArray(toolingTypes)) {
+      toolingTypes.forEach((toolingType) => {
+        tools.push({
+          name,
+          homepage_url,
+          description,
+          toolingType,
+        });
       });
     }
   }
@@ -52,28 +58,53 @@ if (toolsCategory) {
           hostParts.length > 2 ? hostParts[hostParts.length - 2] : hostParts[0];
       }
 
-      tool.name = `@${domainOrUsername}/${tool.name}`;
+      let uniqueName = `@${domainOrUsername}/${tool.name}`;
+      if (nameCount[uniqueName]) {
+        uniqueName = `${uniqueName} | ${toTitleCase(tool.toolingType)}`;
+      }
+
+      tool.uniqueName = uniqueName;
+      nameCount[uniqueName] = (nameCount[uniqueName] || 0) + 1;
+    } else {
+      tool.uniqueName = tool.name;
     }
   });
 
-  toolsCategory.items = tools.map((tool) => {
-    const logoFileName = `${tool.name.replace(/ /g, "-").replace(/\//g, "-")}.svg`;
-    const logoFilePath = path.join("logos", logoFileName);
-    if (!fs.existsSync(logoFilePath)) {
-      generateSvg(tool.name, logoFilePath);
+  tools.forEach((tool) => {
+    let toolingTypeTitleCase = toTitleCase(tool.toolingType);
+    let subcategory = toolsCategory.subcategories.find(
+      (sub) => sub.name === toolingTypeTitleCase,
+    );
+    if (!subcategory) {
+      subcategory = {
+        name: toolingTypeTitleCase,
+        items: [],
+      };
+      toolsCategory.subcategories.push(subcategory);
     }
 
-    return {
-      name: tool.name,
+    const logoFileName = `${tool.uniqueName.replace(/ /g, "-").replace(/\//g, "-").replace(/\|/g, "-")}.svg`;
+    const logoFilePath = path.join("logos", logoFileName);
+    if (!fs.existsSync(logoFilePath)) {
+      generateSvg(tool.uniqueName, logoFilePath);
+    }
+
+    subcategory.items.push({
+      name: tool.uniqueName,
       homepage_url: tool.homepage_url,
       logo: logoFileName,
       description: tool.description,
-    };
+    });
+  });
+
+  // Sort tools in each subcategory by name
+  toolsCategory.subcategories.forEach((subcategory) => {
+    subcategory.items.sort((a, b) => a.name.localeCompare(b.name));
   });
 
   saveYaml(landscapeData, landscapeFilePath);
 } else {
-  console.error("Tools category or subcategory not found.");
+  console.error("Tools category not found.");
 }
 
 function loadYaml(filePath) {
@@ -116,4 +147,11 @@ function generateSvg(name, filePath) {
   </svg>`;
 
   fs.writeFileSync(filePath, svgContent, "utf8");
+}
+
+function toTitleCase(str) {
+  return str
+    .split("-")
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(" ");
 }
