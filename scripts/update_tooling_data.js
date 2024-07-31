@@ -163,7 +163,7 @@ function generateLogo(name, filePath) {
     const minLetters = 4;
     const maxLetters = 12;
     const minSize = 64;
-    const maxSize = 112;
+    const maxSize = 100;
     numLetters = Math.max(minLetters, Math.min(numLetters, maxLetters));
     const slope = (minSize - maxSize) / (maxLetters - minLetters);
     const fontSize = maxSize + slope * (numLetters - minLetters);
@@ -184,12 +184,14 @@ function generateLogo(name, filePath) {
   const originalName = name
     .split("/")
     .pop()
-    .replace(/[-.,@\|]/g, " ")
+    .replace(/[-.,@]/g, " ")
+    .replace(/[()]/g, "")
     .split(" ")
     .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-    .join(" ");
+    .join(" ")
+    .split(" |")[0];
 
-  const designType = Math.floor(Math.random() * 4);
+  const designType = 1;
   const randomUppercase = Math.random() > 0.5;
   let svgContent;
 
@@ -212,23 +214,36 @@ function generateLogo(name, filePath) {
       break;
 
     case 1:
-      const words = originalName.split(" ");
-      const firstWord = words[0] || "";
-      const secondWord = words[1] || "";
-      const font = randomFont();
-      const fontSizeFirst = calculateFontSize(firstWord.length);
-      const fontSizeSecond = calculateFontSize(secondWord.length);
-      const lineHeight = 1.2;
+      //     svgContent = `
+      //   <text x="50%" y="50%" dy="-${(fontSizeFirst * lineHeight) / 2}" font-size="${fontSizeFirst}" font-family="${font}" font-weight="bold" text-anchor="middle" alignment-baseline="middle" fill="${textColor}">
+      //     ${truncateString(firstWord)}
+      //   </text>
+      //   <text x="50%" y="50%" dy="${(fontSizeSecond * lineHeight) / 2}" font-size="${fontSizeSecond}" font-family="${font}" font-weight="bold" text-anchor="middle" alignment-baseline="middle" fill="${textColor}">
+      //     ${truncateString(secondWord)}
+      //   </text>
 
-      svgContent = `
-  <svg width="${size}" height="${size}" xmlns="http://www.w3.org/2000/svg">
-    <text x="50%" y="50%" dy="-${(fontSizeFirst * lineHeight) / 2}" font-size="${fontSizeFirst}" font-family="${font}" font-weight="bold" text-anchor="middle" alignment-baseline="middle" fill="${textColor}">
-      ${truncateString(firstWord)}
-    </text>
-    <text x="50%" y="50%" dy="${(fontSizeSecond * lineHeight) / 2}" font-size="${fontSizeSecond}" font-family="${font}" font-weight="bold" text-anchor="middle" alignment-baseline="middle" fill="${textColor}">
-      ${truncateString(secondWord)}
-    </text>
-  </svg>`;
+      const words = originalName.split(" ");
+      const maxWords = 5;
+      const font = randomFont();
+
+      const validWords = words.slice(0, maxWords);
+      const wordCount = validWords.length;
+      const sectionHeight = 100 / wordCount;
+
+      svgContent = `<svg width="${size}" height="${size}" xmlns="http://www.w3.org/2000/svg">`;
+
+      validWords.forEach((word, i) => {
+        if (word) {
+          const fontSize = calculateFontSize(word.length);
+          const yPosition = (i + 0.5) * sectionHeight; // Center within the section
+          svgContent += `
+        <text x="50%" y="${yPosition}%" font-size="${fontSize}" font-family="${font}" font-weight="bold" text-anchor="middle" alignment-baseline="middle" fill="${textColor}">
+          ${truncateString(word)}
+        </text>`;
+        }
+      });
+
+      svgContent += `</svg>`;
       break;
 
     case 2:
