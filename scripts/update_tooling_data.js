@@ -162,8 +162,8 @@ function generateLogo(name, filePath) {
   function calculateFontSize(numLetters) {
     const minLetters = 4;
     const maxLetters = 12;
-    const minSize = 64;
-    const maxSize = 100;
+    const minSize = 72;
+    const maxSize = 86;
     numLetters = Math.max(minLetters, Math.min(numLetters, maxLetters));
     const slope = (minSize - maxSize) / (maxLetters - minLetters);
     const fontSize = maxSize + slope * (numLetters - minLetters);
@@ -184,8 +184,9 @@ function generateLogo(name, filePath) {
   const originalName = name
     .split("/")
     .pop()
-    .replace(/[-.,@]/g, " ")
+    .replace(/[-,@]/g, " ")
     .replace(/[()]/g, "")
+    .replace(/::/g, " ")
     .split(" ")
     .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
     .join(" ")
@@ -228,14 +229,15 @@ function generateLogo(name, filePath) {
 
       const validWords = words.slice(0, maxWords);
       const wordCount = validWords.length;
-      const sectionHeight = 100 / wordCount;
+      const sectionHeight = 100 / (wordCount + 1);
 
+      // Generate SVG content
       svgContent = `<svg width="${size}" height="${size}" xmlns="http://www.w3.org/2000/svg">`;
 
       validWords.forEach((word, i) => {
         if (word) {
           const fontSize = calculateFontSize(word.length);
-          const yPosition = (i + 0.5) * sectionHeight; // Center within the section
+          const yPosition = (i + 1) * sectionHeight; // Position evenly across sections
           svgContent += `
         <text x="50%" y="${yPosition}%" font-size="${fontSize}" font-family="${font}" font-weight="bold" text-anchor="middle" alignment-baseline="middle" fill="${textColor}">
           ${truncateString(word)}
