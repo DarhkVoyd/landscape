@@ -135,35 +135,42 @@ function saveYaml(data, filePath) {
 function generateLogo(name, filePath) {
   const fonts = [
     "Impact",
-    "Arial",
-    "Verdana",
-    "Times New Roman",
-    "Courier New",
-    "Lucida Console",
-    "Monospace",
+    // "Arial",
+    // "Verdana",
+    // "Times New Roman",
+    // "Courier New",
+    // "Lucida Console",
+    // "Monospace",
   ];
 
   const textColors = [
-    "#000000", // Black
-    "#1E90FF", // DodgerBlue
+    // "#000000", // Black
+    // "#4169E1", // DodgerBlue
     "#2F4F4F", // DarkSlateGray
-    "#000080", // Navy
-    "#800000", // Maroon
-    "#00008B", // DarkBlue
-    "#191970", // MidnightBlue
-    "#0000CD", // MediumBlue
+    // "#556983",
+    // "#000080", // Navy
+    // "#800000", // Maroon
+    // "#00008B", // DarkBlue
+    // "#191970", // MidnightBlue
+    // "#0000CD", // MediumBlue
+    // "#8B0000", // DarkRed
+    // "#006400", // DarkGreen
+    // "#556B2F", // DarkOliveGreen
+    // "#B22222", // FireBrick
+    // "#483D8B", // DarkSlateBlue
   ];
 
   const size = 512;
+
   const randomColor = (colors) =>
     colors[Math.floor(Math.random() * colors.length)];
   const randomFont = () => fonts[Math.floor(Math.random() * fonts.length)];
-
+  const getTextColor = () => randomColor(textColors);
   function calculateFontSize(numLetters) {
     const minLetters = 4;
-    const maxLetters = 12;
-    const minSize = 72;
-    const maxSize = 86;
+    const maxLetters = 18;
+    const minSize = 32;
+    const maxSize = 96;
     numLetters = Math.max(minLetters, Math.min(numLetters, maxLetters));
     const slope = (minSize - maxSize) / (maxLetters - minLetters);
     const fontSize = maxSize + slope * (numLetters - minLetters);
@@ -171,22 +178,21 @@ function generateLogo(name, filePath) {
     return fontSize;
   }
 
-  function truncateString(str, maxLength = 12) {
+  function truncateString(str, maxLength = 18) {
     if (str.length > maxLength) {
       return str.slice(0, maxLength);
     }
     return str;
   }
-  const getTextColor = () => randomColor(textColors);
-
-  let textColor = getTextColor();
 
   const originalName = name
     .split("/")
     .pop()
-    .replace(/[-,@]/g, " ")
+    .replace(/[-@]/g, " ")
     .replace(/[()]/g, "")
     .replace(/::/g, " ")
+    .replace(/, /g, " ")
+    .replace(/([a-z]{2,})([A-Z][a-z])/g, "$1 $2")
     .split(" ")
     .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
     .join(" ")
@@ -194,6 +200,7 @@ function generateLogo(name, filePath) {
 
   const designType = 1;
   const randomUppercase = Math.random() > 0.5;
+  let textColor = getTextColor();
   let svgContent;
 
   switch (designType) {
@@ -208,30 +215,21 @@ function generateLogo(name, filePath) {
 
       svgContent = `
       <svg width="${size}" height="${size}" xmlns="http://www.w3.org/2000/svg">
-        <text x="50%" y="50%" font-size="200" font-family="${randomFont()}" font-weight="bold" text-anchor="middle" alignment-baseline="middle" fill="${textColor}">
+        <text x="50%" y="50%" font-size="200" font-family="${randomFont()}" font-weight="normal" text-anchor="middle" alignment-baseline="middle" fill="${textColor}">
           ${randomUppercase ? shortName.toUpperCase() : shortName}
         </text>
       </svg>`;
       break;
 
     case 1:
-      //     svgContent = `
-      //   <text x="50%" y="50%" dy="-${(fontSizeFirst * lineHeight) / 2}" font-size="${fontSizeFirst}" font-family="${font}" font-weight="bold" text-anchor="middle" alignment-baseline="middle" fill="${textColor}">
-      //     ${truncateString(firstWord)}
-      //   </text>
-      //   <text x="50%" y="50%" dy="${(fontSizeSecond * lineHeight) / 2}" font-size="${fontSizeSecond}" font-family="${font}" font-weight="bold" text-anchor="middle" alignment-baseline="middle" fill="${textColor}">
-      //     ${truncateString(secondWord)}
-      //   </text>
-
-      const words = originalName.split(" ");
       const maxWords = 5;
       const font = randomFont();
+      const words = originalName.split(" ");
 
       const validWords = words.slice(0, maxWords);
       const wordCount = validWords.length;
       const sectionHeight = 100 / (wordCount + 1);
 
-      // Generate SVG content
       svgContent = `<svg width="${size}" height="${size}" xmlns="http://www.w3.org/2000/svg">`;
 
       validWords.forEach((word, i) => {
@@ -239,7 +237,7 @@ function generateLogo(name, filePath) {
           const fontSize = calculateFontSize(word.length);
           const yPosition = (i + 1) * sectionHeight; // Position evenly across sections
           svgContent += `
-        <text x="50%" y="${yPosition}%" font-size="${fontSize}" font-family="${font}" font-weight="bold" text-anchor="middle" alignment-baseline="middle" fill="${textColor}">
+        <text x="50%" y="${yPosition}%" font-size="${fontSize}" font-family="${font}" font-weight="normal" text-anchor="middle" alignment-baseline="middle" fill="${textColor}">
           ${truncateString(word)}
         </text>`;
         }
@@ -252,7 +250,7 @@ function generateLogo(name, filePath) {
       const firstWordBrand = originalName.split(" ")[0] || "";
       svgContent = `
       <svg width="${size}" height="${size}" xmlns="http://www.w3.org/2000/svg">
-        <text x="50%" y="50%" font-size="${calculateFontSize(firstWordBrand.length)}" font-family="${randomFont()}" font-weight="bold" alignment-baseline="middle" text-anchor="middle" fill="${textColor}">${truncateString(firstWordBrand)}</text>
+        <text x="50%" y="50%" font-size="${calculateFontSize(firstWordBrand.length)}" font-family="${randomFont()}" font-weight="normal" alignment-baseline="middle" text-anchor="middle" fill="${textColor}">${truncateString(firstWordBrand)}</text>
       </svg>`;
       break;
 
@@ -264,7 +262,7 @@ function generateLogo(name, filePath) {
       <svg width="${size}" height="${size}" xmlns="http://www.w3.org/2000/svg">
         <rect x="10%" y="30%" width="80%" height="5%" fill="${textColor}" />
         <rect x="10%" y="65%" width="80%" height="5%" fill="${textColor}" />
-        <text x="50%" y="50%" font-size="${fontSize}" font-family="${randomFont()}" font-weight="bold" text-anchor="middle" alignment-baseline="middle" fill="${textColor}" dy="0.1em">
+        <text x="50%" y="50%" font-size="${fontSize}" font-family="${randomFont()}" font-weight="normal" text-anchor="middle" alignment-baseline="middle" fill="${textColor}" dy="0.1em">
           ${randomUppercase ? truncateString(firstPart.toUpperCase()) : truncateString(firstPart)}
         </text>
       </svg>`;
