@@ -1,0 +1,16 @@
+<svg width="512" height="512" xmlns="http://www.w3.org/2000/svg">
+        <text x="50%" y="16.666666666666668%" font-size="91.42857142857143" font-family="Impact" font-weight="normal" text-anchor="middle" alignment-baseline="middle" fill="#2F4F4F">
+          React
+        </text>
+        <text x="50%" y="33.333333333333336%" font-size="96" font-family="Impact" font-weight="normal" text-anchor="middle" alignment-baseline="middle" fill="#2F4F4F">
+          Json
+        </text>
+        <text x="50%" y="50%" font-size="86.85714285714286" font-family="Impact" font-weight="normal" text-anchor="middle" alignment-baseline="middle" fill="#2F4F4F">
+          Schema
+        </text>
+        <text x="50%" y="66.66666666666667%" font-size="96" font-family="Impact" font-weight="normal" text-anchor="middle" alignment-baseline="middle" fill="#2F4F4F">
+          Form
+        </text>
+        <text x="50%" y="83.33333333333334%" font-size="96" font-family="Impact" font-weight="normal" text-anchor="middle" alignment-baseline="middle" fill="#2F4F4F">
+          Mui
+        </text></svg>

@@ -28,12 +28,11 @@ categories:
             logo: serverless-workflow.svg
             project_org: https://github.com/serverlessworkflow
             description: Serverless Workflow presents a vendor-neutral, open-source, and entirely community-driven ecosystem tailored for defining and executing DSL-based workflows in the realm of Serverless technology.
-          - name: "{json:api}"
+          - name: '{json:api}'
             homepage_url: https://jsonapi.org/
             logo: json-api.svg
             project_org: https://github.com/json-api
             description: A specification for building JSON APIs.
-
       - name: Adopters
         items:
           - name: GitHub
@@ -43,7 +42,6 @@ categories:
             twitter: https://twitter.com/github
             project_org: https://github.com/github
             description: GitHub is a web-based hosting service for version control using Git. It is mostly used for computer code. It offers all of the distributed version control and source code management functionality of Git as well as adding its own features.
-
           - name: Cookpad
             homepage_url: https://cookpad.com/
             logo: cookpad.svg
@@ -51,7 +49,6 @@ categories:
             twitter: https://twitter.com/cookpadteam
             project_org: https://github.com/cookpad
             description: Cookpad is a tech company building a community platform for people to share recipe ideas and cooking tips.
-
           - name: Tyler Technology
             homepage_url: https://www.tylertech.com/
             logo: tylertech.svg
@@ -59,7 +56,6 @@ categories:
             twitter: https://twitter.com/tylertech
             project_org: https://github.com/TylerTechnologies
             description: Tyler Technologies is a software company providing integrated software and technology services to the public sector.
-
           - name: Remote
             homepage_url: https://remote.com/
             logo: remote.svg
@@ -67,7 +63,6 @@ categories:
             twitter: https://twitter.com/remote
             project_org: https://github.com/remoteoss
             description: Remote offers payroll, tax, HR, and compliance solutions for distributed teams.
-
           - name: Postman
             homepage_url: https://postman.com
             logo: postman.svg
@@ -75,7 +70,6 @@ categories:
             twitter: https://twitter.com/getpostman
             project_org: https://github.com/postmanlabs
             description: Postman is a collaboration platform for API development. Postman's features simplify each step of building an API and streamline collaboration so you can create better APIs—faster.
-
           - name: OpenMetadata
             homepage_url: https://open-metadata.org/
             logo: openmetadata.svg
@@ -83,7 +77,6 @@ categories:
             description: Open Standard for Metadata with a Centralized Metadata Store. Discover, Collaborate and get your Data Right.
             project_org: https://github.com/open-metadata
             twitter: https://twitter.com/open_metadata
-
           - name: WunderGraph
             homepage_url: https://wundergraph.com/
             logo: wundergraph.svg
@@ -91,7 +84,6 @@ categories:
             description: WunderGraph is a next generation BFF framework designed to optimize frontend, fullstack, and backend developer workflows.
             project_org: https://github.com/wundergraph
             twitter: https://twitter.com/wundergraphcom
-
           - name: Zapier
             homepage_url: https://zapier.com/
             logo: zapier.svg
@@ -99,7 +91,6 @@ categories:
             description: Zapier is an online automation tool that connects your favorite apps, such as Gmail, Slack, Mailchimp, and over 1,500 more. You can connect two or more apps to automate repetitive tasks without coding or relying on developers to build the integration.
             project_org: https://github.com/zapier
             twitter: https://twitter.com/zapier
-
           - name: Microsoft
             homepage_url: https://microsoft.com
             logo: microsoft.svg
@@ -107,7 +98,6 @@ categories:
             description: Microsoft Corporation is an American multinational technology company with headquarters in Redmond, Washington. It develops, manufactures, licenses, supports, and sells computer software, consumer electronics, personal computers, and related services.
             project_org: https://github.com/microsoft
             twitter: https://twitter.com/microsoft
-
           - name: F5
             homepage_url: https://www.f5.com/
             logo: f5.svg
@@ -115,7 +105,6 @@ categories:
             description: F5 Networks provides application security and delivery tools.
             project_org: https://github.com/F5Networks
             twitter: https://twitter.com/f5
-
           - name: Automatic Data Processing (ADP)
             homepage_url: https://www.adp.com/
             logo: adp.svg
@@ -123,7 +112,6 @@ categories:
             description: Automatic Data Processing is a management services company that provides payroll, time and attendance, and HR services.
             project_org: https://github.com/adpllc
             twitter: https://twitter.com/adp
-
           - name: Manfred
             homepage_url: https://www.getmanfred.com/
             logo: manfred.svg
@@ -131,35 +119,30 @@ categories:
             description: Manfred is the platform that allows you to build your professional career, keeping absolute control of your resume.
             project_org: https://github.com/getmanfred
             twitter: https://twitter.com/getmanfred
-
           - name: Cyclops
             homepage_url: https://cyclops-ui.com/
             logo: cyclops.svg
             crunchbase: https://www.crunchbase.com/organization/cyclops-b209
             description: customizable UI for Kubernetes deployments
             project_org: https://github.com/cyclops-ui/cyclops
-
           - name: KrakenD
             homepage_url: https://www.krakend.io/
             logo: krakend.svg
             crunchbase: https://www.crunchbase.com/organization/krakend
             description: KrakenD is an ultra performant API Gateway with middlewares and plugins. It is designed for large companies, so it is scalable and easy to configure. It is a stateless, distributed, high-performance API Gateway that helps you to manage your microservices.
             project_org: https://github.com/krakend
-
           - name: Waylit
             homepage_url: https://www.waylit.com/
             logo: waylit.svg
             crunchbase: https://www.crunchbase.com/organization/waylit
             description: WayLit is a full-service business immigration management platform that provides U.S. and global immigration services.
             twitter: https://twitter.com/WayLit_Inc
-
           - name: KickstartDS
             homepage_url: https://www.kickstartds.com/
             logo: kickstartds.svg
             description: kickstartDS enables digital teams to easily create and upgrade Design Systems saving tons of time.
             project_org: https://github.com/kickstartDS/kickstartDS
             twitter: https://twitter.com/kickstartDS
-
           - name: Invopop
             homepage_url: https://www.invopop.com/
             logo: invopop.svg
@@ -167,7 +150,6 @@ categories:
             description: Invopop is a developer of invoicing management software.
             project_org: https://github.com/invopop
             twitter: https://twitter.com/goinvopop
-
           - name: Stedi
             homepage_url: https://www.stedi.com/
             logo: stedi.svg
@@ -175,14 +157,12 @@ categories:
             description: A platform of developer-focused building blocks for business integrations.
             project_org: https://github.com/stedi
             twitter: https://twitter.com/stedi
-
           - name: Dashjoin
             homepage_url: https://dashjoin.com/
             logo: dashjoin.svg
             description: Dashjoin Is an Open Source & Cloud Native Low Code Development and Integration Platform That Helps Teams Deliver AI Empowered Applications Faster.
             project_org: https://github.com/dashjoin
             twitter: https://twitter.com/dashjoin
-
           - name: Helm
             homepage_url: https://helm.sh/
             logo: helmsh.svg
@@ -190,7 +170,6 @@ categories:
             description: Helm is an open source package manager for Kubernetes that simplifies the deployment and management of applications.
             project_org: https://github.com/helm
             twitter: https://twitter.com/helmpack
-
           - name: Authsignal
             homepage_url: https://www.authsignal.com/
             logo: authsignal.svg
@@ -198,7 +177,6 @@ categories:
             description: Authsignal is a drop-in digital identity authentication platform.
             project_org: https://github.com/authsignal
             twitter: https://twitter.com/authsignal
-
           - name: Node-RED
             homepage_url: https://nodered.org/
             logo: node-red.svg
@@ -206,7 +184,6 @@ categories:
             description: Node-RED is a flow-based, low-code development tool for event-driven applications.
             project_org: https://github.com/node-red
             twitter: https://twitter.com/nodered
-
           - name: Endjin
             homepage_url: https://endjin.com/
             logo: endjin.svg
@@ -214,37 +191,31 @@ categories:
             twitter: https://twitter.com/endjin
             project_org: https://github.com/endjin
             description: Endjin is a consultancy that designs a data platform to monitor the oceans in near-real time to prevent illegal fishing.
-
           - name: Smart Data Models
             homepage_url: https://smartdatamodels.org/
             logo: smartdatamodels.svg
             project_org: https://github.com/smart-data-models
             description: Smart Data Models is a collaborative program to provide data models for digital twins and data spaces.
-
           - name: Schema Store
             homepage_url: https://www.schemastore.org/json/
             logo: json-store.svg
             project_org: https://github.com/schemastore/schemastore/
             description: The repository is a universal JSON schema store, where schemas for popular JSON documents can be found.
-
           - name: Renovate Bot
             homepage_url: https://docs.renovatebot.com/
             logo: renovatebot.svg
             project_org: https://github.com/renovatebot/renovate
             description: Automated dependency updates. Multi-platform and multi-language..
-
           - name: Vercel Turbo
             homepage_url: https://turbo.build/repo
             logo: turbo.svg
             project_org: https://github.com/vercel/turbo
             description: A high-performance build system for JavaScript and TypeScript codebases.
-
           - name: ShadCn
             homepage_url: https://ui.shadcn.com/
             logo: shadcn.svg
             project_org: https://github.com/shadcn-ui/ui
             description: Beautifully designed components that you can copy and paste into your apps.
-
   - name: Sponsors
     subcategories:
       - name: Bronze
@@ -256,7 +227,6 @@ categories:
             twitter: https://twitter.com/AsyncAPISpec
             project_org: https://github.com/asyncapi
             description: The AsyncAPI Initiative is a specification and growing set of open-source tools to help developers define, build, and maintain asynchronous APIs and EDAs.
-
           - name: Airbnb
             homepage_url: http://www.airbnb.com/
             logo: airbnb.svg
@@ -264,7 +234,6 @@ categories:
             twitter: https://twitter.com/airbnb
             project_org: https://github.com/airbnb
             description: Airbnb is an online community marketplace for people to list, discover, and book accommodations through mobile phones or the internet.
-
           - name: Postman
             homepage_url: https://postman.com
             logo: postman.svg
@@ -272,7 +241,6 @@ categories:
             twitter: https://twitter.com/getpostman
             project_org: https://github.com/postmanlabs
             description: Postman is a collaboration platform for API development. Postman's features simplify each step of building an API and streamline collaboration so you can create better APIs—faster.
-
           - name: Endjin
             homepage_url: https://endjin.com/
             logo: endjin.svg
@@ -280,33 +248,811 @@ categories:
             twitter: https://twitter.com/endjin
             project_org: https://github.com/endjin
             description: Endjin is a consultancy that designs a data platform to monitor the oceans in near-real time to prevent illegal fishing.
-
           - name: LLC.org
             homepage_url: https://www.llc.org/
             logo: llc.svg
-            organization: { name: "LLC.org" }
+            organization:
+              name: LLC.org
             description: Step-by-step guides for launching an LLC.
-
           - name: VPS Server
             homepage_url: https://www.vpsserver.com/
             logo: vps-server.svg
             crunchbase: https://www.crunchbase.com/organization/vpsserver
             twitter: https://twitter.com/vpsservercom
             description: Providing virtual private servers (VPS) with 3-way server replication. Guaranteed the best I/O performance and data protection.
-
       - name: Community
         items:
           - name: JSON Buddy
             homepage_url: https://json-buddy.com
             logo: jsonbuddy.svg
-            organization: { name: "JSONSBuddy" }
+            organization:
+              name: JSONSBuddy
             description: JSONBuddy is a JSON editor and validator for Windows that supports various JSON standards and formats.
-
   - name: Tools
     subcategories:
-      - name: Tools
+      - name: Validator
         items:
-          - name: JSON Schema Tooling Ecosystem
-            homepage_url: https://json-schema.org/tools
-            logo: tooling.svg
-            description: Discover JSON Schema tooling to help your organization leverage the benefits of JSON Schema. Because JSON Schema is much more than a Specification, it is a vibrant ecosystem of Validators, Generators, Linters, and other JSON Schema Utilities made by this amazing Community.
+          - name: '@cfworker/json-schema'
+            homepage_url: https://github.com/cfworker/cfworker/blob/master/packages/json-schema/README.md
+            logo: '@cfworker-json-schema.svg'
+            description: A JSON schema validator that will run on Cloudflare workers. Supports drafts 4, 7, 2019-09, and 2020-12.
+          - name: '@corvus-dotnet/Corvus.JsonSchema'
+            homepage_url: https://github.com/corvus-dotnet/corvus.jsonschema
+            logo: '@corvus-dotnet-corvus.jsonschema.svg'
+            description: Support for Json Schema validation and entity generation
+          - name: '@exodus/schemasafe'
+            homepage_url: https://github.com/ExodusMovement/schemasafe
+            logo: '@exodus-schemasafe.svg'
+            description: A reasonably safe JSON Schema validator with draft-04/06/07/2019-09/2020-12 support.
+          - name: '@gregsdennis/JsonSchema.Net'
+            homepage_url: https://github.com/gregsdennis/json-everything
+            logo: '@gregsdennis-jsonschema.net.svg'
+            description: System.Text.Json-based support for all of your JSON needs.
+          - name: '@JamesNK/Json.NET Schema'
+            homepage_url: https://github.com/JamesNK/Newtonsoft.Json.Schema
+            logo: '@jamesnk-json.net-schema.svg'
+            description: Json.NET Schema is a powerful, complete and easy to use JSON Schema framework for .NET
+          - name: '@kaptinlin/jsonschema'
+            homepage_url: https://github.com/kaptinlin/jsonschema
+            logo: '@kaptinlin-jsonschema.svg'
+            description: A powerful Go JSON Schema validator library aligned with the JSON Schema Draft 2020-12.
+          - name: '@lateapexearlyspeed/LateApexEarlySpeed.Json.Schema'
+            homepage_url: https://github.com/lateapexearlyspeed/Lateapexearlyspeed.JsonSchema
+            logo: '@lateapexearlyspeed-lateapexearlyspeed.json.schema.svg'
+            description: Simple and high performance json schema implementation for .Net and related json validation in .Net
+          - name: '@luposlip/luposlip/json-schema'
+            homepage_url: https://github.com/luposlip/json-schema
+            logo: '@luposlip-luposlip-json-schema.svg'
+            description: Clojure library JSON Schema validation and generation - Draft-07 compatible
+          - name: '@openapi-json-schema-tools/OpenAPI JSON Schema Generator'
+            homepage_url: https://github.com/openapi-json-schema-tools/openapi-json-schema-generator
+            logo: '@openapi-json-schema-tools-openapi-json-schema-generator.svg'
+            description: OpenAPI JSON Schema Generator allows auto-generation of API client libraries with a focus on JSON schema given an OpenAPI document
+          - name: '@python-jsonschema/jsonschema'
+            homepage_url: https://github.com/python-jsonschema/jsonschema
+            logo: '@python-jsonschema-jsonschema.svg'
+            description: An implementation of the JSON Schema specification for Python
+          - name: ajv
+            homepage_url: https://github.com/ajv-validator/ajv
+            logo: ajv.svg
+            description: The fastest JSON schema Validator.
+          - name: ajv-cli
+            homepage_url: https://github.com/ajv-validator/ajv-cli
+            logo: ajv-cli.svg
+            description: Command-line interface for Ajv JSON Validator
+          - name: boon
+            homepage_url: https://github.com/santhosh-tekuri/boon
+            logo: boon.svg
+            description: JSONSchema (draft 2020-12, draft 2019-09, draft-7, draft-6, draft-4) Validation in Rust
+          - name: darhkvoyd/JSON-Schema
+            homepage_url: https://github.com/darhkvoyd/json-schema
+            logo: darhkvoyd-json-schema.svg
+            description: Greatest JSON Schema implementation of all time.
+          - name: djv
+            homepage_url: https://github.com/korzio/djv
+            logo: djv.svg
+            description: Dynamic JSON Schema Validator - Supports draft-04/06
+          - name: DSJSONSchemaValidation
+            homepage_url: https://github.com/dashevo/JSONSchemaValidation
+            logo: dsjsonschemavalidation.svg
+            description: JSON Schema draft 4, 6 and 7 parsing and validation library written in Objective-C.
+          - name: erosb/json-sKema
+            homepage_url: https://github.com/erosb/json-sKema
+            logo: erosb-json-skema.svg
+            description: JSON Schema Validator for the JVM, implements draft 2020-12
+          - name: everit-org/json-schema
+            homepage_url: https://github.com/everit-org/json-schema
+            logo: everit-org-json-schema.svg
+            description: JSON Schema validator for java, based on the org.json API
+          - name: Exonerate
+            homepage_url: https://github.com/E-xyza/Exonerate
+            logo: exonerate.svg
+            description: An opinionated JSONSchema compiler for elixir.
+          - name: ExtendsClass's JSON Schema Validator
+            homepage_url: https://extendsclass.com/json-schema-validator.html
+            logo: extendsclass's-json-schema-validator.svg
+            description: JSON Schema Validator and Generator
+          - name: f5-json-schema
+            homepage_url: https://github.com/hotkit/json-schema
+            logo: f5-json-schema.svg
+            description: JSON schema validation
+          - name: fastjsonschema
+            homepage_url: https://github.com/horejsek/python-fastjsonschema
+            logo: fastjsonschema.svg
+            description: Fast JSON schema validator for Python
+          - name: gojsonschema
+            homepage_url: https://github.com/xeipuuv/gojsonschema
+            logo: gojsonschema.svg
+            description: An implementation of JSON Schema, draft v4 v6 & v7 - Go language
+          - name: Hyperjump JSV
+            homepage_url: https://github.com/hyperjump-io/json-schema
+            logo: hyperjump-jsv.svg
+            description: JSON Schema Validation, Annotation, and Bundling. Supports Draft 04, 06, 07, 2019-09, 2020-12, OpenAPI 3.0, and OpenAPI 3.1
+          - name: Hyperjump JSV (online)
+            homepage_url: https://github.com/hyperjump-io/json-schema.hyperjump.io
+            logo: hyperjump-jsv-(online).svg
+            description: Validate JSON Schema documents online
+          - name: jema.js
+            homepage_url: https://github.com/nuxodin/jema.js
+            logo: jema.js.svg
+            description: JSON Schema handling / validator
+          - name: JeSSE
+            homepage_url: https://github.com/for-GET/jesse
+            logo: jesse.svg
+            description: jesse (JSon Schema Erlang) is an implementation of a JSON Schema validator for Erlang.
+          - name: jinx
+            homepage_url: https://github.com/juxt/jinx
+            logo: jinx.svg
+            description: jinx is not xml-schema (it's json-schema!)
+          - name: jschon
+            homepage_url: https://github.com/marksparkza/jschon
+            logo: jschon.svg
+            description: An object-oriented JSON Schema implementation for Python.
+          - name: jschon.dev
+            homepage_url: https://github.com/marksparkza/jschon.dev
+            logo: jschon.dev.svg
+            description: JSON Schema web validator built on jschon.
+          - name: JSI
+            homepage_url: https://github.com/notEthan/jsi/
+            logo: jsi.svg
+            description: 'JSI: JSON Schema Instantiation in Ruby'
+          - name: JSON Essentials for COM/ActiveX
+            homepage_url: https://pinery.systems/json-essentials-com/index.html
+            logo: json-essentials-for-com-activex.svg
+            description: JSON Essentials™ for COM/ActiveX is a language independent JSON toolkit for rapid implementation of the most common JSON use cases on the Windows platform
+          - name: JSON Schema Library
+            homepage_url: https://github.com/sagold/json-schema-library
+            logo: json-schema-library.svg
+            description: Customizable and hackable json-validator and json-schema utilities for traversal, data generation and validation
+          - name: JSON Schema Lint
+            homepage_url: https://github.com/nickcmaynard/jsonschemalint
+            logo: json-schema-lint.svg
+            description: JSON Schema Lint
+          - name: JSON schema validation for JSON for Modern C++
+            homepage_url: https://github.com/pboettch/json-schema-validator
+            logo: json-schema-validation-for-json-for-modern-c++.svg
+            description: JSON schema validator for JSON for Modern C++
+          - name: JSON Schema Validator
+            homepage_url: https://github.com/JamesNK/Newtonsoft.Json.Schema?tab=License-1-ov-file
+            logo: json-schema-validator.svg
+            description: An online, interactive JSON Schema validator. Supports JSON Schema Draft 3, Draft 4, Draft 6, Draft 7, Draft 2019-09 and Draft 2020-12.
+          - name: json-everything
+            homepage_url: https://github.com/gregsdennis/json-everything
+            logo: json-everything.svg
+            description: System.Text.Json-based support for all of your JSON needs.
+          - name: json-kotlin-schema
+            homepage_url: https://github.com/pwall567/json-kotlin-schema
+            logo: json-kotlin-schema.svg
+            description: Kotlin implementation of JSON Schema (Draft 07)
+          - name: json-schema (dev.harrel)
+            homepage_url: https://github.com/harrel56/json-schema
+            logo: json-schema-(dev.harrel).svg
+            description: JSON schema validation library written in Java
+          - name: json-schema (fisxoj)
+            homepage_url: https://github.com/fisxoj/json-schema
+            logo: json-schema-(fisxoj).svg
+            description: JSON Schema validation
+          - name: json-schema-validator
+            homepage_url: https://github.com/OptimumCode/json-schema-validator
+            logo: json-schema-validator.svg
+            description: The JSON schema validation library that works with
+          - name: JSON::Schema::Modern
+            homepage_url: https://github.com/karenetheridge/JSON-Schema-Modern
+            logo: json::schema::modern.svg
+            description: Validate data against a schema using a JSON Schema
+          - name: JSON::Schema::Tiny
+            homepage_url: https://github.com/karenetheridge/JSON-Schema-Tiny
+            logo: json::schema::tiny.svg
+            description: Validate data against a schema, minimally
+          - name: JSON::Validator
+            homepage_url: https://github.com/mojolicious/json-validator
+            logo: json::validator.svg
+            description: Validate data against a JSON schema
+          - name: jsoncons
+            homepage_url: https://github.com/danielaparker/jsoncons
+            logo: jsoncons.svg
+            description: A C++, header-only library for constructing JSON and JSON-like data formats, with JSON Pointer, JSON Patch, JSON Schema, JSONPath, JMESPath, CSV, MessagePack, CBOR, BSON, UBJSON
+          - name: jsonschema-rs
+            homepage_url: https://github.com/Stranger6667/jsonschema-rs
+            logo: jsonschema-rs.svg
+            description: JSON Schema validation library
+          - name: jsonschema-rs (Python)
+            homepage_url: https://github.com/Stranger6667/jsonschema-rs/tree/master/bindings/python
+            logo: jsonschema-rs-(python).svg
+            description: JSON Schema validation library
+          - name: JSONSchema::Validator
+            homepage_url: https://github.com/skbkontur/perl-jsonschema-validator
+            logo: jsonschema::validator.svg
+            description: JSON Schema and OpenAPI data validator for Perl
+          - name: jsonschema.dev
+            homepage_url: https://github.com/Relequestual/json-schema-dev
+            logo: jsonschema.dev.svg
+            description: JSON Schema dev
+          - name: jsonschemafriend
+            homepage_url: https://github.com/jimblackler/jsonschemafriend
+            logo: jsonschemafriend.svg
+            description: A JSON Schema loader and validator, delivered as a Java library.
+          - name: JSONSchemer
+            homepage_url: https://github.com/davishmcclurg/json_schemer
+            logo: jsonschemer.svg
+            description: JSON Schema validator. Supports drafts 4, 6, 7, 2019-09, 2020-12, OpenAPI 3.0, and OpenAPI 3.1.
+          - name: JsonXema
+            homepage_url: https://github.com/hrzndhrn/json_xema
+            logo: jsonxema.svg
+            description: A JSON Schema validator.
+          - name: Justify
+            homepage_url: https://github.com/leadpony/justify
+            logo: justify.svg
+            description: Justify is a JSON validator based on JSON Schema Specification and Jakarta JSON Processing API (JSON-P).
+          - name: lua-resty-jsonschema
+            homepage_url: https://github.com/iresty/lua-resty-jsonschema
+            logo: lua-resty-jsonschema.svg
+            description: Pure Lua JSON schema validator for Lua/LuaJIT
+          - name: Medeia-validator
+            homepage_url: https://github.com/worldturner/medeia-validator
+            logo: medeia-validator.svg
+            description: Medeia JSON-Schema Validator
+          - name: networknet/json-schema-validator
+            homepage_url: https://github.com/networknt/json-schema-validator
+            logo: networknet-json-schema-validator.svg
+            description: A fast Java JSON schema validator that supports draft V4, V6, V7, V2019-09 and V2020-12
+          - name: Opis Json Schema
+            homepage_url: https://github.com/opis/json-schema
+            logo: opis-json-schema.svg
+            description: JSON Schema validator for PHP
+          - name: Polyglottal JSON Schema Validator
+            homepage_url: https://github.com/json-schema-everywhere/pajv
+            logo: polyglottal-json-schema-validator.svg
+            description: A command line JSON Schema validator that supports many file formats. Fork of jessedc/ajv-cli.
+          - name: qri-io/jsonschema
+            homepage_url: https://github.com/qri-io/jsonschema
+            logo: qri-io-jsonschema.svg
+            description: Golang implementation of https://json-schema.org drafts 7 & 2019-09
+          - name: Reactive Core Circe JSON Validator
+            homepage_url: https://github.com/reactivecore/rc-circe-json-schema
+            logo: reactive-core-circe-json-validator.svg
+            description: This is a Scala implementation of a JSON Schema validator based upon the great io.circe Library.
+          - name: santhosh-tekuri/jsonschema
+            homepage_url: https://github.com/santhosh-tekuri/jsonschema
+            logo: santhosh-tekuri-jsonschema.svg
+            description: JSONSchema (draft 2020-12, draft 2019-09, draft-7, draft-6, draft-4) Validation using Go
+          - name: Snow
+            homepage_url: https://github.com/ssilverman/snowy-json
+            logo: snow.svg
+            description: Snow, a full-featured JSON Schema validator
+          - name: Swaggest Json Schema
+            homepage_url: https://github.com/swaggest/php-json-schema
+            logo: swaggest-json-schema.svg
+            description: High definition PHP structures with JSON-schema based validation
+          - name: valbuddy
+            homepage_url: https://github.com/Clemens-U/jsonbuddy
+            logo: valbuddy.svg
+            description: JSON Schema and XML/W3C validator tool
+          - name: Validate JSON Action
+            homepage_url: https://github.com/OrRosenblatt/validate-json-action
+            logo: validate-json-action.svg
+            description: A Github action for validating JSON.
+          - name: Valijson
+            homepage_url: https://github.com/tristanpenman/valijson
+            logo: valijson.svg
+            description: Header-only C++ library for JSON Schema validation, with support for many popular parsers
+          - name: Vert.x Json Schema
+            homepage_url: https://github.com/eclipse-vertx/vertx-json-schema
+            logo: vert.x-json-schema.svg
+            description: Vert.x Json Schema
+          - name: vue-vuelidate-jsonschema
+            homepage_url: https://github.com/mokkabonna/vue-vuelidate-jsonschema
+            logo: vue-vuelidate-jsonschema.svg
+            description: Create vuelidate validation rules based on json schema
+          - name: yajsv
+            homepage_url: https://github.com/neilpa/yajsv
+            logo: yajsv.svg
+            description: Yet Another JSON Schema Validator [CLI]
+          - name: yetanother
+            homepage_url: https://github.com/darhkvoyd/json-schema
+            logo: yetanother.svg
+            description: Yet Another JSON Schema implementation
+          - name: Zuunr JSON
+            homepage_url: https://bitbucket.org/zuunr/json
+            logo: zuunr-json.svg
+            description: Immutable JSON structure to enable Java applications to utilize JSON Schemas INSIDE Java applications - avoiding extra serialization and deserialization.
+      - name: Code To Schema
+        items:
+          - name: '@gregsdennis/JsonSchema.Net | Code To Schema'
+            homepage_url: https://github.com/gregsdennis/json-everything
+            logo: '@gregsdennis-jsonschema.net---code-to-schema.svg'
+            description: System.Text.Json-based support for all of your JSON needs.
+          - name: '@invopop/jsonschema'
+            homepage_url: https://github.com/invopop/jsonschema
+            logo: '@invopop-jsonschema.svg'
+            description: jsonschema generates schemas from Go structs. Supports Draft 2020-12.
+          - name: '@JamesNK/Json.NET Schema | Code To Schema'
+            homepage_url: https://github.com/JamesNK/Newtonsoft.Json.Schema
+            logo: '@jamesnk-json.net-schema---code-to-schema.svg'
+            description: Json.NET Schema is a powerful, complete and easy to use JSON Schema framework for .NET
+          - name: '@kgiszczak/Shale'
+            homepage_url: https://github.com/kgiszczak/shale
+            logo: '@kgiszczak-shale.svg'
+            description: Shale generates schema from Ruby models. Supports Draft 2020-12.
+          - name: '@lateapexearlyspeed/LateApexEarlySpeed.Json.Schema | Code To Schema'
+            homepage_url: https://github.com/lateapexearlyspeed/Lateapexearlyspeed.JsonSchema
+            logo: '@lateapexearlyspeed-lateapexearlyspeed.json.schema---code-to-schema.svg'
+            description: Simple and high performance json schema implementation for .Net and related json validation in .Net
+          - name: '@openapi-json-schema-tools/OpenAPI JSON Schema Generator | Code To Schema'
+            homepage_url: https://github.com/openapi-json-schema-tools/openapi-json-schema-generator
+            logo: '@openapi-json-schema-tools-openapi-json-schema-generator---code-to-schema.svg'
+            description: OpenAPI JSON Schema Generator allows auto-generation of API client libraries with a focus on JSON schema given an OpenAPI document
+          - name: drf-jsonschema-serializer
+            homepage_url: https://github.com/maykinmedia/drf-jsonschema-serializer
+            logo: drf-jsonschema-serializer.svg
+            description: drf-jsonschema-serializer generates schemas from Django Rest Framework serializers.
+          - name: jsonschema-generator
+            homepage_url: https://github.com/victools/jsonschema-generator
+            logo: jsonschema-generator.svg
+            description: jsonschema-generator generates schemas from Java types. Supports Drafts 6, 7, 2019-09, and 2020-12.
+          - name: Liform
+            homepage_url: https://github.com/Limenius/liform
+            logo: liform.svg
+            description: Liform generates schemas from Symfony forms.
+          - name: mashumaro
+            homepage_url: https://github.com/Fatal1ty/mashumaro
+            logo: mashumaro.svg
+            description: mashumaro generates schemas from Python type annotations.
+          - name: msgspec
+            homepage_url: https://github.com/jcrist/msgspec
+            logo: msgspec.svg
+            description: msgspec generates schemas from Python type annotations.
+          - name: NJsonSchema
+            homepage_url: https://github.com/RSuter/NJsonSchema/
+            logo: njsonschema.svg
+            description: NJsonSchema generates schemas from .NET types. See issue 574 for draft-06+ support progress.
+          - name: Pydantic
+            homepage_url: https://github.com/pydantic/pydantic
+            logo: pydantic.svg
+            description: Pydantic generates schemas from Python models based on Python 3.6+ type hints.
+          - name: scala-jsonschema
+            homepage_url: https://github.com/andyglow/scala-jsonschema
+            logo: scala-jsonschema.svg
+            description: scala-jsonschema generates schemas out of Scala case classes.
+          - name: Schemars
+            homepage_url: https://github.com/GREsau/schemars
+            logo: schemars.svg
+            description: Schemars generates schema from Rust code. Supports Draft 7.
+          - name: typescript-json-schema
+            homepage_url: https://github.com/YousefED/typescript-json-schema
+            logo: typescript-json-schema.svg
+            description: typescript-json-schema generates schemas from TypeScript types.
+      - name: Schema To Data
+        items:
+          - name: '@gregsdennis/JsonSchema.Net | Schema To Data'
+            homepage_url: https://github.com/gregsdennis/json-everything
+            logo: '@gregsdennis-jsonschema.net---schema-to-data.svg'
+            description: System.Text.Json-based support for all of your JSON needs.
+          - name: '@Zac-HD/hypothesis-jsonschema'
+            homepage_url: https://github.com/Zac-HD/hypothesis-jsonschema
+            logo: '@zac-hd-hypothesis-jsonschema.svg'
+            description: Tools to generate test data from JSON schemata with Hypothesis
+          - name: jsongenerator
+            homepage_url: https://github.com/jimblackler/jsongenerator
+            logo: jsongenerator.svg
+            description: A JSON data generator from JSON Schemas, provided as a Java library.
+      - name: Data To Schema
+        items:
+          - name: '@glideapps/quicktype.io'
+            homepage_url: https://github.com/glideapps/quicktype
+            logo: '@glideapps-quicktype.io.svg'
+            description: Infer JSON Schema from samples, and generate TypeScript, C++, Go, Java, C#, Swift, etc. types from JSON Schema.
+          - name: '@luposlip/luposlip/json-schema | Data To Schema'
+            homepage_url: https://github.com/luposlip/json-schema
+            logo: '@luposlip-luposlip-json-schema---data-to-schema.svg'
+            description: Clojure library JSON Schema validation and generation - Draft-07 compatible
+          - name: json-schema-inferrer
+            homepage_url: https://github.com/saasquatch/json-schema-inferrer
+            logo: json-schema-inferrer.svg
+            description: Java library for inferring JSON Schemas from one or multiple JSON samples.
+          - name: JSONoid
+            homepage_url: https://github.com/michaelmior/jsonoid-discovery/
+            logo: jsonoid.svg
+            description: Command line tool and Spark application for inferring schemas from JSON documents, supports draft 2020-12.
+          - name: jsonschema.net
+            homepage_url: https://github.com/jsonsystems/public
+            logo: jsonschema.net.svg
+            description: Generates schemas from example data.
+          - name: Liquid Online Tools
+            homepage_url: https://www.liquid-technologies.com/online-json-to-schema-converter
+            logo: liquid-online-tools.svg
+            description: Infer JSON Schema from sample JSON data.
+          - name: Schema Guru
+            homepage_url: https://github.com/snowplow/schema-guru
+            logo: schema-guru.svg
+            description: CLI util, Spark Job and Web UI for deriving JSON Schemas out of corpus of JSON instances. See issue 178 for progress towards draft-06+ support.
+      - name: Documentation
+        items:
+          - name: '@adobe/jsonschema2md'
+            homepage_url: https://github.com/adobe/jsonschema2md
+            logo: '@adobe-jsonschema2md.svg'
+            description: '@adobe/jsonschema2md provides scripts to turn JSON Schema files into readable Markdown documentation, ready for consumption on GitHub or processed using Jekyll or other static site generators. Supports JSON Schema 2019-09 (partial).'
+          - name: '@cloudflare/doca'
+            homepage_url: https://github.com/cloudflare/json-schema-tools/tree/master/workspaces/doca
+            logo: '@cloudflare-doca.svg'
+            description: '@cloudflare/doca, part of JSON Schema Tools, provides a set of tools to generate documentation from JSON Schemas, supporting draft-04, -06, -07, and Doca extensions (UI forthcoming).'
+          - name: '@openapi-json-schema-tools/OpenAPI JSON Schema Generator | Documentation'
+            homepage_url: https://github.com/openapi-json-schema-tools/openapi-json-schema-generator
+            logo: '@openapi-json-schema-tools-openapi-json-schema-generator---documentation.svg'
+            description: OpenAPI JSON Schema Generator allows auto-generation of API client libraries with a focus on JSON schema given an OpenAPI document
+          - name: '@oxygenxml/Oxygen XSL JSON Tools | Documentation'
+            homepage_url: https://www.oxygenxml.com/json_converter.html
+            logo: '@oxygenxml-oxygen-xsl-json-tools---documentation.svg'
+            description: Generate from an XSD file a similar JSON Schema structure.
+          - name: docson
+            homepage_url: https://github.com/lbovet/docson
+            logo: docson.svg
+            description: Javascript-based schema viewer. Runs as a local web app.
+          - name: docusaurus-json-schema-plugin
+            homepage_url: https://github.com/jy95/docusaurus-json-schema-plugin
+            logo: docusaurus-json-schema-plugin.svg
+            description: Schema viewer. Runs within a Docusaurus web app.
+          - name: FastAPI
+            homepage_url: https://github.com/tiangolo/fastapi
+            logo: fastapi.svg
+            description: FastAPI is an API framework based on Python 3.6+ types that generates OpenAPI 3 schemas, including JSON Schemas for all the models declared.
+          - name: json-schema-for-humans
+            homepage_url: https://github.com/coveooss/json-schema-for-humans
+            logo: json-schema-for-humans.svg
+            description: Generate HTML representation of a schema. Python-based.
+          - name: json-schema-static-docs
+            homepage_url: https://github.com/tomcollins/json-schema-static-docs
+            logo: json-schema-static-docs.svg
+            description: Generates human friendly markdown documentation from JSON Schema. Includes links between pages based on $ref values.
+          - name: jsonschematic
+            homepage_url: https://github.com/yanick/jsonschematic/
+            logo: jsonschematic.svg
+            description: Svelte-based schema viewer. Runs as a local web app.
+          - name: wetzel
+            homepage_url: https://github.com/CesiumGS/wetzel
+            logo: wetzel.svg
+            description: Generates Markdown and AsciiDoc.
+      - name: Schema To Code
+        items:
+          - name: '@glideapps/quicktype.io | Schema To Code'
+            homepage_url: https://github.com/glideapps/quicktype
+            logo: '@glideapps-quicktype.io---schema-to-code.svg'
+            description: Infer JSON Schema from samples, and generate TypeScript, C++, Go, Java, C#, Swift, etc. types from JSON Schema.
+          - name: '@kgiszczak/Shale | Schema To Code'
+            homepage_url: https://github.com/kgiszczak/shale
+            logo: '@kgiszczak-shale---schema-to-code.svg'
+            description: Shale generates schema from Ruby models. Supports Draft 2020-12.
+          - name: '@nuget/Corvus.JsonSchema'
+            homepage_url: https://www.nuget.org/packages/Corvus.Json.JsonSchema.TypeGeneratorTool/
+            logo: '@nuget-corvus.jsonschema.svg'
+            description: Generates an idiomatic dotnet type model from JSON Schema files, supporting all JSON Schema features, including property accessors, enumeration, common string `format`, and JSON document building/modification; over low-level `System.Text.Json` types.
+          - name: '@openapi-json-schema-tools/OpenAPI JSON Schema Generator | Schema To Code'
+            homepage_url: https://github.com/openapi-json-schema-tools/openapi-json-schema-generator
+            logo: '@openapi-json-schema-tools-openapi-json-schema-generator---schema-to-code.svg'
+            description: OpenAPI JSON Schema Generator allows auto-generation of API client libraries with a focus on JSON schema given an OpenAPI document
+          - name: go-jsonschema
+            homepage_url: https://git.sr.ht/~emersion/go-jsonschema
+            logo: go-jsonschema.svg
+            description: Generates Go types and helpers from JSON schema files.
+          - name: json-kotlin-schema-codegen
+            homepage_url: https://github.com/pwall567/json-kotlin-schema-codegen
+            logo: json-kotlin-schema-codegen.svg
+            description: Generates Kotlin data classes, Java classes or TypeScript interfaces from JSON Schema.
+          - name: json-schema-to-case-class
+            homepage_url: https://github.com/cchandurkar/json-schema-to-case-class
+            logo: json-schema-to-case-class.svg
+            description: NPM Package, Web UI, and a CLI to generate Scala case classes from JSON Schema.
+          - name: json-schema-to-elm
+            homepage_url: https://github.com/dragonwasrobot/json-schema-to-elm
+            logo: json-schema-to-elm.svg
+            description: Generates Elm types, JSON decoders+encoders, and fuzz tests from one or more JSON Schema files.
+          - name: jsonCodeGen
+            homepage_url: https://github.com/schlothauer-wauer/jsoncodegen
+            logo: jsoncodegen.svg
+            description: Groovy based generation tasks from JSON schema. Already includes templates/generators for Java Beans, Swagger specification files and PlantUML diagrams.
+          - name: jsonschema2pojo
+            homepage_url: https://github.com/joelittlejohn/jsonschema2pojo
+            logo: jsonschema2pojo.svg
+            description: Generates Java types from JSON Schema (or example JSON) and can annotate those types for data-binding with Jackson 2.x or Gson.
+          - name: jsonschematypes
+            homepage_url: https://github.com/jimblackler/jsonschematypes
+            logo: jsonschematypes.svg
+            description: Generates Java or TypeScript classes from standard JSON Schemas.
+          - name: php-code-builder
+            homepage_url: https://github.com/swaggest/php-code-builder
+            logo: php-code-builder.svg
+            description: Generates PHP mapping structures defined by JSON schema using swaggest/json-schema.
+          - name: protoc-gen-jsonschema
+            homepage_url: https://github.com/chrusty/protoc-gen-jsonschema
+            logo: protoc-gen-jsonschema.svg
+            description: Generates JSON schemas from protobuf proto v2 and v3 files.
+          - name: schemafy
+            homepage_url: https://github.com/Marwes/schemafy
+            logo: schemafy.svg
+            description: Generates Rust types and serialization code from a JSON schema.
+          - name: statham
+            homepage_url: https://github.com/jacksmith15/statham-schema
+            logo: statham.svg
+            description: Generate type-annotated models from JSON Schema documents.
+          - name: yacg
+            homepage_url: https://github.com/OkieOth/yacg
+            logo: yacg.svg
+            description: Parse JSON Schema and OpenAPI files to build a meta model from them. This meta model can be used in Mako templates to generate source code, other schemas or PlantUml.
+      - name: Benchmarks
+        items:
+          - name: json-schema-benchmark
+            homepage_url: https://github.com/ebdrup/json-schema-benchmark
+            logo: json-schema-benchmark.svg
+            description: An independent benchmark for Node.js JSON-schema validators based on JSON-Schema Test Suite.
+          - name: json-schema-validation-comparison
+            homepage_url: https://github.com/creek-service/json-schema-validation-comparison
+            logo: json-schema-validation-comparison.svg
+            description: An independent functional and performance comparison of JVM-based validator implementations using JSON-Schema Test Suite and more.
+          - name: php-json-schema-bench
+            homepage_url: https://github.com/swaggest/php-json-schema-bench
+            logo: php-json-schema-bench.svg
+            description: Comparative benchmark for JSON-schema PHP validators using JSON-Schema Test Suite and z-schema/JSCK.
+      - name: LDO Utility
+        items:
+          - name: '@cloudflare/json-hyper-schema'
+            homepage_url: https://github.com/cloudflare/json-schema-tools/tree/master/workspaces/json-hyper-schema
+            logo: '@cloudflare-json-hyper-schema.svg'
+            description: '@cloudflare/json-hyper-schema is a utility tool for working with JSON Hyper-Schemas, supporting draft-07, -06, and -04.'
+      - name: Model To Schema
+        items:
+          - name: Dataspecer
+            homepage_url: https://github.com/mff-uk/dataspecer
+            logo: dataspecer.svg
+            description: Generates JSON Schema (and JSON-LD context) from conceptual model.
+      - name: Schema To Types
+        items:
+          - name: json-schema-to-ts
+            homepage_url: https://github.com/ThomasAribart/json-schema-to-ts
+            logo: json-schema-to-ts.svg
+            description: Generates TypeScript types from JSON schemas.
+          - name: json-schema-to-typescript
+            homepage_url: https://github.com/bcherny/json-schema-to-typescript
+            logo: json-schema-to-typescript.svg
+            description: JSON Schema to TypeScript type generator used by Amazon, Microsoft, Mozilla, Webpack, and others.
+      - name: Schema To Web UI
+        items:
+          - name: AJSF (Angular JSON Schema Form)
+            homepage_url: https://github.com/hamzahamidi/ajsf
+            logo: ajsf-(angular-json-schema-form).svg
+            description: Angular JSON Schema Form
+          - name: Alpaca Forms
+            homepage_url: https://github.com/gitana/alpaca
+            logo: alpaca-forms.svg
+            description: Alpaca provides the easiest way to generate interactive HTML5 forms for web and mobile applications.
+          - name: Angular Schema Form
+            homepage_url: https://github.com/json-schema-form/angular-schema-form
+            logo: angular-schema-form.svg
+            description: Generate forms from a JSON schema, with AngularJS!
+          - name: Dashjoin JSON Schema Form
+            homepage_url: https://github.com/dashjoin/json-schema-form
+            logo: dashjoin-json-schema-form.svg
+            description: Angular JSON Schema Form Library
+          - name: JSON Editor
+            homepage_url: https://github.com/json-editor/json-editor
+            logo: json-editor.svg
+            description: JSON Schema Based Editor
+          - name: JSON Form (joshfire)
+            homepage_url: https://github.com/jsonform/jsonform
+            logo: json-form-(joshfire).svg
+            description: Build forms from JSON Schema. Easily template-able.
+          - name: Json Forms (brutusin)
+            homepage_url: https://github.com/brutusin/json-forms
+            logo: json-forms-(brutusin).svg
+            description: JSON Schema to HTML form generator, supporting dynamic subschemas (on the fly resolution)
+          - name: JSON Schema Form Element
+            homepage_url: https://github.com/json-schema-form-element/jsfe
+            logo: json-schema-form-element.svg
+            description: A Custom Element that auto-generates forms, declaratively. Works with Lit, Solid, Vue, Svelte, React, Astro, vanilla…
+          - name: json-schema-form (Remote.com)
+            homepage_url: https://github.com/remoteoss/json-schema-form
+            logo: json-schema-form-(remote.com).svg
+            description: json-schema-form is a headless UI form library powered by JSON Schemas.
+          - name: JSONForms (jsonforms.io)
+            homepage_url: https://github.com/eclipsesource/jsonforms
+            logo: jsonforms-(jsonforms.io).svg
+            description: Customizable JSON Schema-based forms with React, Angular and Vue support out of the box.
+          - name: Liform-React
+            homepage_url: https://github.com/Limenius/liform-react
+            logo: liform-react.svg
+            description: Generate forms from JSON Schema to use with React (& redux-form)
+          - name: Ngx Schema Form
+            homepage_url: https://github.com/makinacorpus/angular2-schema-form
+            logo: ngx-schema-form.svg
+            description: HTML form generation based on JSON Schema
+          - name: React Json Schema Form (Mui)
+            homepage_url: https://github.com/vip-git/react-jsonschema-form-material-ui
+            logo: react-json-schema-form-(mui).svg
+            description: Universal JSON Schema Form - Currently Support for React - Material UI components for building Web forms from JSON Schema.
+          - name: React JSON Schema Form (RJSF-Team)
+            homepage_url: https://github.com/rjsf-team/react-jsonschema-form
+            logo: react-json-schema-form-(rjsf-team).svg
+            description: A React component for building Web forms from JSON Schema.
+          - name: React Schema Form (networknt)
+            homepage_url: https://github.com/networknt/react-schema-form
+            logo: react-schema-form-(networknt).svg
+            description: React form based on json schema for form generation and validation
+          - name: Restspace Schema Form
+            homepage_url: https://github.com/restspace/schema-form
+            logo: restspace-schema-form.svg
+            description: A React component package for generating forms based on (almost) the full power of JSON Schema.
+          - name: UI Schema for React
+            homepage_url: https://github.com/ui-schema/ui-schema
+            logo: ui-schema-for-react.svg
+            description: Use JSON-Schema with React, generate Forms + UIs with any design system, easy creation of complex custom widgets.
+          - name: vazco/uniforms
+            homepage_url: https://github.com/vazco/uniforms
+            logo: vazco-uniforms.svg
+            description: A React library for building forms from any schema.
+      - name: Util Testing
+        items:
+          - name: '@Zac-HD/hypothesis-jsonschema | Util Testing'
+            homepage_url: https://github.com/Zac-HD/hypothesis-jsonschema
+            logo: '@zac-hd-hypothesis-jsonschema---util-testing.svg'
+            description: Tools to generate test data from JSON schemata with Hypothesis
+      - name: Util General Processing
+        items:
+          - name: '@cloudflare/json-schema-walker'
+            homepage_url: https://github.com/cloudflare/json-schema-tools/tree/master/workspaces/json-schema-walker
+            logo: '@cloudflare-json-schema-walker.svg'
+            description: '*draft-07, -06, -04, and Cloudflare''s Doca extensions* Walks schemas and runs pre- and post-walk callbacks. Can modify schemas in place.'
+          - name: '@hyperjump/json-schema-core'
+            homepage_url: https://github.com/jdesrosiers/json-schema-core
+            logo: '@hyperjump-json-schema-core.svg'
+            description: Tools for working with schemas that handle identifiers and references. Build vocabularies and other JSON Schema based tools.
+          - name: json-schema-library
+            homepage_url: https://github.com/sagold/json-schema-library
+            logo: json-schema-library.svg
+            description: 'Exposes tools to work with json-schema, including: data creation from json-schema, `$ref` processing, walk through schemas, etc.'
+          - name: json-schema-ref-parser
+            homepage_url: https://github.com/BigstickCarpet/json-schema-ref-parser
+            logo: json-schema-ref-parser.svg
+            description: Tools for dereferencing non-cyclic schemas, bundling referenced schemas into a single file, and other `$ref` processing.
+      - name: Util Schema To Schema
+        items:
+          - name: '@cloudflare/json-schema-transform'
+            homepage_url: https://github.com/cloudflare/json-schema-tools/tree/master/workspaces/json-schema-transform
+            logo: '@cloudflare-json-schema-transform.svg'
+            description: Utilities using @cloudflare/json-schema-walker for transformations including `allOf` merging and example roll-up.
+          - name: json-schema-compare
+            homepage_url: https://github.com/mokkabonna/json-schema-compare
+            logo: json-schema-compare.svg
+            description: Tool for comparing JSON Schemas.
+          - name: JSON-Schema-Instantiator
+            homepage_url: https://github.com/tomarad/JSON-Schema-Instantiator
+            logo: json-schema-instantiator.svg
+            description: Create an instance from a JSON Schema.
+          - name: json-schema-merge-allof
+            homepage_url: https://github.com/mokkabonna/json-schema-merge-allof
+            logo: json-schema-merge-allof.svg
+            description: Merge `allOf` properties in JSON Schema.
+          - name: json-schema-resolve-allof
+            homepage_url: https://www.npmjs.com/package/json-schema-resolve-allof
+            logo: json-schema-resolve-allof.svg
+            description: Resolve `allOf` in JSON Schema.
+      - name: Util Draft Migration
+        items:
+          - name: AlterSchema
+            homepage_url: https://github.com/sourcemeta/alterschema
+            logo: alterschema.svg
+            description: '*JSON Schema 2020-12, 2019-09, draft-07, -06, -04*'
+      - name: Util Format Conversion
+        items:
+          - name: '@cloudflare/json-schema-apidoc-loader'
+            homepage_url: https://github.com/cloudflare/json-schema-tools/tree/master/workspaces/json-schema-apidoc-loader
+            logo: '@cloudflare-json-schema-apidoc-loader.svg'
+            description: Back-end for @cloudflare/doca.
+          - name: '@cloudflare/json-schema-ref-loader'
+            homepage_url: https://github.com/cloudflare/json-schema-tools/tree/master/workspaces/json-schema-ref-loader
+            logo: '@cloudflare-json-schema-ref-loader.svg'
+            description: Webpack loader for dereference-able schemas in JSON, JSON5, YAML, or JavaScript.
+          - name: '@oxygenxml/Oxygen XSL JSON Tools'
+            homepage_url: https://www.oxygenxml.com/json_converter.html
+            logo: '@oxygenxml-oxygen-xsl-json-tools.svg'
+            description: Generate from an XSD file a similar JSON Schema structure.
+          - name: JSON Schema to OpenAPI Schema
+            homepage_url: https://github.com/wework/json-schema-to-openapi-schema
+            logo: json-schema-to-openapi-schema.svg
+            description: '*draft-04* Draft-06 and -07 planned per README.'
+          - name: OpenAPI specification to JSON Schema
+            homepage_url: https://github.com/instrumenta/openapi2jsonschema
+            logo: openapi-specification-to-json-schema.svg
+            description: '*Draft-07*'
+          - name: Orderly
+            homepage_url: https://github.com/lloyd/orderly
+            logo: orderly.svg
+            description: 'The reference implementation of orderly: a schema language for JSON.'
+          - name: ramldt2jsonschema
+            homepage_url: https://github.com/raml-org/ramldt2jsonschema
+            logo: ramldt2jsonschema.svg
+            description: '*draft-06, 04*'
+          - name: XSD to JSON Schema IntelliJ Plugin
+            homepage_url: https://plugins.jetbrains.com/plugin/19024-xsd-to-json-schema
+            logo: xsd-to-json-schema-intellij-plugin.svg
+            description: Plugin for converting an XML Schema (XSD) file to a JSON Schema file.
+      - name: Editor
+        items:
+          - name: Altova XMLSpy 2019r3
+            homepage_url: https://www.altova.com/xmlspy-xml-editor#json_schema
+            logo: altova-xmlspy-2019r3.svg
+            description: Graphical JSON Schema editor for draft-06 and draft-7, as well as validation of JSON files based on JSON Schema.
+          - name: Dashjoin JSON Schema editor
+            homepage_url: https://dashjoin.github.io/#/schema
+            logo: dashjoin-json-schema-editor.svg
+            description: Graphical online JSON Schema editor for draft-06 (minus oneOf, anyOf, allOf, not). The generated schema can be tested immediately via a form that is driven by it.
+          - name: Eclipse IDE
+            homepage_url: https://www.eclipse.org/downloads/eclipse-packages
+            logo: eclipse-ide.svg
+            description: Rich JSON edition supporting schema for instantaneous validation and error reporting, completion, documentation.
+          - name: Hackolade Studio
+            homepage_url: https://hackolade.com/help/JSONSchemaEditor.html
+            logo: hackolade-studio.svg
+            description: 'Visual JSON Schema editor for draft-04, draft-06, draft-07, 2019-09, 2020-12, as well as data modeling tool for NoSQL databases, storage formats, REST APIs, and JSON in RDBMS. Also converts to and from: different draft specifications, DDL, XSD, Swagger, OpenAPI, YAML, Avro, Parquet, Protobuf, and most of the NoSQL script syntaxes. Includes a GUI for Entity-Relationship Diagrams and a Command-Line Interface.'
+          - name: JSONBuddy
+            homepage_url: https://www.json-buddy.com/
+            logo: jsonbuddy.svg
+            description: 'Text and grid-style JSON editor and validator. Complete JSON Schema development environment with JSON Schema analyzer, context sensitive entry-helpers, sample data generation based on JSON Schema and JSON Schema validation debugger: Step through the validation process and set breakpoints. JSON Schema testing tool including schema coverage. Support for draft-4, draft-6, draft-7, 2019-09 and 2020-12.'
+          - name: JSONEditor Online
+            homepage_url: https://jsoneditoronline.org/
+            logo: jsoneditor-online.svg
+            description: View, edit, format, and validate JSON online.
+          - name: Liquid JSON Schema Editor
+            homepage_url: https://www.liquid-technologies.com/json-schema-editor
+            logo: liquid-json-schema-editor.svg
+            description: Graphical JSON Schema editor for draft-04, draft-06, draft-07 and 2019-09, with split source code and grphical editing. Includes validation of JSON files based on JSON Schema, JSON Sample Generator and JSON Schema Documentation Generator.
+          - name: Oxygen JSON Schema Editor
+            homepage_url: https://www.oxygenxml.com/xml_developer/json_schema_editor.html
+            logo: oxygen-json-schema-editor.svg
+            description: JSON Schema editor with a variety of editing features and helper views (Design/Text/Author). Support for validation and editing JSON Schema draft-4, draft-6, and draft-7, 2019-09 (partial), 2020-12 (partial). Validation and editing of JSON files based on JSON Schema.
+          - name: Perseid Modeler
+            homepage_url: https://www.datensen.com/data-modeling/perseid-modeler-for-json-schema.html
+            logo: perseid-modeler.svg
+            description: 'A modeling tool for JSON Schema and OpenAPI. Key features include: visual JSON schema creation using tree and ERD-like diagrams, support for JSON schema structures including operators and conditions, import of existing schemas from files, creation of detailed HTML reports, export to PDF, script generation, and more.'
+          - name: Stoplight Studio
+            homepage_url: https://stoplight.io/
+            logo: stoplight-studio.svg
+            description: JSON Schema IDE (text-based and GUI) with support for JSON/YAML linting, which can also be based on JSON Schema rules via Spectral.
+          - name: Visual Studio Code
+            homepage_url: https://code.visualstudio.com/
+            logo: visual-studio-code.svg
+            description: Schema driven code completion, hovers and validation for editing JSON files (including schemas).
+          - name: WebStorm, IntelliJ IDEA, and other JetBrains IDEs
+            homepage_url: https://www.jetbrains.com/products.html?fromMenu#type=ide
+            logo: webstorm,-intellij-idea,-and-other-jetbrains-ides.svg
+            description: Code completion, documentation, and validation for JSON and YAML files using JSON Schema.
+      - name: Schema Repository
+        items:
+          - name: SchemaStore.org
+            homepage_url: https://github.com/schemastore/schemastore/
+            logo: schemastore.org.svg
+            description: Validate against common JSON Schemas.
+      - name: Linter
+        items:
+          - name: json-schema-linter
+            homepage_url: https://www.json-schema-linter.com/
+            logo: json-schema-linter.svg
+            description: Lint/validate/parse json-schema itself, and find typos, missing properties, missing required keys, etc.
+          - name: Stoplight Spectral
+            homepage_url: https://github.com/stoplightio/spectral
+            logo: stoplight-spectral.svg
+            description: A flexible JSON/YAML linter for creating automated style guides, with baked in support for [OpenAPI v2/v3](https://www.openapis.org) and JSON Schema. Supports draft 4, 6, and 7.
+      - name: Linter Plugins
+        items:
+          - name: eslint-plugin-json-schema-validator
+            homepage_url: https://github.com/ota-meshi/eslint-plugin-json-schema-validator
+            logo: eslint-plugin-json-schema-validator.svg
+            description: ESLint plugin that validates code using JSON schema and reports violations.
+          - name: remark-lint-frontmatter-schema
+            homepage_url: https://github.com/JulianCataldo/remark-lint-frontmatter-schema
+            logo: remark-lint-frontmatter-schema.svg
+            description: Validate Markdown frontmatter YAML against an associated JSON schema with this remark-lint rule plugin.
+      - name: Hyper Schema
+        items:
+          - name: mokkabonna/json-hyper-schema
+            homepage_url: https://github.com/mokkabonna/json-hyper-schema
+            logo: mokkabonna-json-hyper-schema.svg
+            description: A JavaScript implementation of JSON hyper-schema.
