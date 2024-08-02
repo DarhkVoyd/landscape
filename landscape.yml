@@ -622,6 +622,10 @@ categories:
             homepage_url: https://github.com/YousefED/typescript-json-schema
             logo: typescript-json-schema.svg
             description: typescript-json-schema generates schemas from TypeScript types.
+          - name: YAML-to-JSONSchema
+            homepage_url: https://github.com/darhkvoyd/json-schema
+            logo: yaml-to-jsonschema.svg
+            description: Yet Another Markup Langguage to Schema implementation
       - name: Schema To Data
         items:
           - name: '@gregsdennis/JsonSchema.Net | Schema To Data'
